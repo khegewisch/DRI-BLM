@@ -32,6 +32,8 @@ function downloadReport(){
 		window.open(src_report);
 	}else if(map_format == 'pdf'){
 		console.log('PDF download not set up yet')
+		export_to_pdf('img_report')
+		//Uncaught (in promise) DOMException: Failed to execute 'toDataURL' on 'HTMLCanvasElement': Tainted canvases may not be exported.
 	};
 };
 
