@@ -93,9 +93,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>	
 
 	<!-- PDF.JS -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.1/processing-api.min.js"></script>
-	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.10.111/pdf.min.js"></script>
-	 <!--<script type="text/javascript" src="scripts/pdf_to_image.js"></script>-->
+	<script type="text/javascript" src="scripts/export_to_pdf.js"></script>
 	<!------------------------------>
   </head>
   <body style="background-color:white">
@@ -250,7 +248,7 @@ select.form-control { -webkit-appearance: menulist; }
 				</div>
 				 <div class="col-sm-9">
 					<b>
-					Open the vegetation production report for this land unit by clicking <a href="/vegetation" target="_blank">this link</a>.
+					Open the vegetation production report for this land unit by clicking <a href="vegetation.html" target="_blank">this link</a>.
 					</b>
 				</div>
 			</div>
@@ -271,7 +269,7 @@ select.form-control { -webkit-appearance: menulist; }
 					<option value="pdf">PDF</option>
 					</select>
 				  <div class="input-group-prepend">
-				    <button class="btn btn-primary date-change" type="button" id="main-prev">Download Report</button>
+				    <button class="btn btn-primary date-change" type="button" onclick="downloadReport()">Download Report</button>
 				  </div>
 				</div>
 
@@ -313,8 +311,12 @@ select.form-control { -webkit-appearance: menulist; }
        <!--     SCRIPTS          -->
        <!------------------------------>
         <script type="text/javascript" src="static/configuration/configuration.js"></script>
+	<script type="text/javascript" src="static/js/jspdf-1.5.3.min.js"></script>
+	<script type="text/javascript" src="static/js/html2canvas-v1.0.0-rc.5.min.js"></script>
+	<script type="text/javascript" src="static/js/canvg-1.5.min.js"></script>
         <script type="text/javascript" src="scripts/utilities.js"></script>
         <script type="text/javascript" src="scripts/initialize.js"></script>
+
         <script>
          $( window ).on( 'load', initialize);
         </script>
