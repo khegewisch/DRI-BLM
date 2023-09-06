@@ -8,16 +8,25 @@
 // key = folder name for dates
 // value = display name for date on webpage
 var dates = {
-	'2023_08_23': '2023-08-23'
+	'2023_08_23': 'August 23, 2023',
 };
 
 /*----------------
 * AREA TYPES AND AREAS
 *----------------*/
+var states = {
+	 'NV': 'Nevada',
+};
+
+
+
 // key = folder name for dates
 // value = display name for date on webpage
 var areaTypes = {	
-	'states': 'States'	
+	'states': 'States',
+	'districts':'District Offices',	
+	'fields':'Field Offices',	
+	'allotments':'Allotments',
 };
 
 

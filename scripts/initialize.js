@@ -1,9 +1,9 @@
 <!---------------------------------------->
 <!--   FUNCTION: GET DICT AREA SUBTYPES -->
 <!---------------------------------------->
-function get_dict_area_subtypes(){
-	var area_type = $('#location_type').val();
-	var dict_type = window.areas[area_type];
+function get_dict_districts(){
+	var state = $('#location_state').val();
+	var dict_type = window.areas[state];
 	return dict_type;
 }
 
@@ -31,17 +31,17 @@ function update_images(){
 <!------------------------------------>
 function initialize(){
 	replace_selectForm('#date',window.dates );
-	replace_selectForm('#location_type',window.areaTypes );
-	replace_selectForm('#location_subtype',get_dict_area_subtypes());
+	replace_selectForm('#location_state',window.states );
+	//replace_selectForm('#location_district',get_dict_districts());
 
-	update_images();
+	//update_images();
 
 	<!------------------------------------>
 	<!--    LISTENERS                   -->
 	<!------------------------------------>
 	$('#location_type').on('change',function(event){
 		replace_selectForm('#location_subtype',get_dict_area_subtypes());
-		update_images();
+		//update_images();
 	});
 
 };
