@@ -17,6 +17,7 @@ function update_images(){
 	var path_to_date_imgs = window.path_to_images+'/'+key_date+'/states/'+key_state;
 
 	var src_report = path_to_date_imgs + '/' + filenames_reports['drought'];
+	console.log(src_report)
 
 	 $('#img_report').attr('src', src_report);
 };
@@ -54,8 +55,6 @@ function initialize(){
 		replace_selectForm('#location_subtype',get_dict_area_subtypes());
 		update_images();
 	});
-
-	
 
 };
 <!------------------------------------>
