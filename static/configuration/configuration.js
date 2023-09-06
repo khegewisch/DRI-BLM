@@ -1,6 +1,5 @@
 //Configuration file for BLM webpage
-//maps for this test are stored at 2023_08_23/states/NV/
-//	BlendTimeSeriesSO.png,SOBlendMaps2.png, LongTermDroughtBlendTable.png
+//reports for this test are stored at 2023_08_23/states/NV/
 
 /*----------------
 * DATES 
@@ -17,7 +16,6 @@ var dates = {
 var states = {
 	 'NV': 'Nevada',
 };
-
 
 
 // key = folder name for dates
@@ -40,11 +38,10 @@ var areas = {
 /*----------------
 * IMAGE FILENAMES
 *----------------*/
-var filenames_images = {
-	'timeseries':'BlendTimeSeriesSO.png',
-	'table':'LongTermDroughtBlendTable.png',
-	'maps': 'SOBlendMaps2.png'
+var filenames_reports = {
+	'drought':'Report_Drought.png',
+	'vegetation':'Report_Vegetation.png',
 };
 
 //path to the image folders for dates
-var path_to_images = 'static/img/data/';
+var path_to_images = 'reports';
